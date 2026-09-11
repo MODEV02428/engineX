@@ -129,6 +129,8 @@ For example:
 
 nginx-web-server
 
+![creating an instance](images/creatINSTANCE.png)
+
 A meaningful name makes it easier to identify the server later.
 
 ---
@@ -179,6 +181,8 @@ The ".pem" file is the private key used when connecting through SSH.
 
 Do not upload your private key to GitHub.
 
+![selecting the instance type and key](images/Instance%20II.png)
+
 ---
 
 3. Configure the Security Group
@@ -203,6 +207,8 @@ HTTP port "80" allows browsers to reach the web server.
 
 The security group therefore needs to permit HTTP traffic if you want to open the website through its public IP.
 
+![creating an instance](images/inst%20security%20groups.png)
+
 ---
 
 4. Launch the Instance
@@ -222,7 +228,9 @@ For example:
 You may also see a public DNS hostname.
 
 You will use one of these addresses when connecting to the server.
+![](images/instance%20initial.png)
 
+![](images/ssh%20conection%20confirmation%20message%20aws%20watermark.png)
 ---
 
 5. Open Git Bash on Windows
@@ -294,7 +302,7 @@ if you recognize and expect the connection.
 Once connected, your terminal is no longer operating on your Windows computer.
 
 You are now controlling the Linux EC2 server.
-
+![](images/SSH%20CONNECTION.png)
 ---
 
 8. Confirm That You Are Inside the EC2 Server
@@ -444,7 +452,7 @@ For example:
 root /var/www/html;
 
 This tells Nginx where to look for website files.
-
+![](images/nginx%20root%20%20source%20file%20tracking.png)
 ---
 
 13. What Is the "index.html" File?
@@ -560,6 +568,8 @@ For example, the repository may contain a webpage such as:
 You can open the website file:
 
 sudo vim /var/www/html/index.html
+ 
+![](images/it%20works%20demo.png)
 
 Then:
 
@@ -568,7 +578,7 @@ Then:
 3. Select the old HTML.
 4. Replace it with the new HTML.
 5. Make any required changes.
-
+c
 This is the part where the original/default website is replaced by the new website.
 
 ---
@@ -751,7 +761,7 @@ EC2 → Nginx → index.html → New Website
 "Updated Website" (images/nginx-updated-website.png)
 
 «Replace the image path with the screenshot of your own updated webpage.»
-
+![](images/successfull%20redeployment.png)
 ---
 
 22. Where the Website Came From
