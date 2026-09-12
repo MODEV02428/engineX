@@ -298,6 +298,7 @@ Type:
 yes
 
 if you recognize and expect the connection.
+![](images/key%20connection.png)
 
 Once connected, your terminal is no longer operating on your Windows computer.
 
@@ -362,7 +363,11 @@ Amazon Linux
 On Amazon Linux, the package-management command may use "dnf":
 
 sudo dnf install nginx -y
+![](images/installing%20nginx.png)
 
+---
+
+![](images/nginx%20successfully%20installed.png)
 After installation, start Nginx:
 
 sudo systemctl start nginx
@@ -500,6 +505,8 @@ Vim allows you to edit website files directly inside the EC2 terminal.
 For example:
 
 sudo vim /var/www/html/index.html
+![](images/entering%20vim%20editor.png)
+
 
 The exact file path depends on the Nginx configuration and Linux distribution.
 
@@ -1166,39 +1173,7 @@ New Website
 
 ---
 
-31. Recommended Screenshots for This Documentation
-
-Only a few screenshots are necessary for this project.
-
-Screenshot 1 — EC2 Instance
-
-Show the running EC2 instance and its public IP.
-
-![EC2 Instance](images/ec2-instance.png)
-
-Screenshot 2 — Default Nginx Page
-
-Show the default page before replacing it.
-
-![Nginx Default Page](images/nginx-default-page.png)
-
-Screenshot 3 — Vim
-
-Show the HTML being edited inside Vim.
-
-![Vim HTML Editor](images/vim-html-editor.png)
-
-Screenshot 4 — Final Website
-
-Show the new webpage after saving the HTML and refreshing the browser.
-
-![Deployed Website](images/nginx-deployed-website.png)
-
-You can replace the filenames above with your own screenshot filenames.
-
----
-
-32. Final Understanding
+31. Final Understanding
 
 This exercise demonstrates a basic real-world cloud deployment workflow.
 
